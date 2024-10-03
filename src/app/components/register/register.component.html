@@ -1,0 +1,47 @@
+<div class="register-container">
+    <div class="register-form-container">
+        <div class="register-form-header">Register</div>
+        <form #actorForm="ngForm" (ngSubmit)="onSubmit()" class="register-form-body">
+            <div class="inline-input">
+                <div class="inline-input-element">
+                    <common-input
+                        label="First name"
+                        [model]="model"
+                        name="first_name"
+                        modelFieldName="firstName"
+                    ></common-input>
+                </div>
+                <div class="inline-input-element">
+                    <common-input
+                        label="Last name"
+                        [model]="model"
+                        name="last_name"
+                        modelFieldName="lastName"
+                    ></common-input>
+                </div>
+            </div>
+            <common-input
+                label="Email"
+                [model]="model"
+                name="email"
+                modelFieldName="email"
+            ></common-input>
+            <common-input
+                label="Password"
+                [model]="model"
+                name="password"
+                type="password"
+                modelFieldName="password"
+            ></common-input>
+            <common-input
+                label="Confirm password"
+                [model]="model"
+                name="re-password"
+                type="password"
+                modelFieldName="rePassword"
+            ></common-input>
+        
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</div>

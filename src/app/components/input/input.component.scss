@@ -1,0 +1,22 @@
+.form-group {
+    position: relative;
+    width: 100%;
+
+    label{
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        background-color: white;
+        font-size: 14px;
+    }
+    
+    input{
+        border: 1px solid #868E9B;
+        border-radius: 4px;
+        outline: none;
+        width: calc(100% - 12px);
+        height: 32px;
+        padding: 0 5px;
+        background-color: transparent;
+    }
+}
