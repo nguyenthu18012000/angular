@@ -39,9 +39,10 @@ export class AppDB extends Dexie {
       existUser.length !== 1 ||
       existUser[0]?.password !== newUser?.password
     ) {
-      console.log('User is existed');
+      console.log('Email hoặc mật khẩu không chính xác');
       return;
     }
-    await this.user.add(newUser);
+    return existUser;
+    // await this.user.add(newUser);
   }
 }

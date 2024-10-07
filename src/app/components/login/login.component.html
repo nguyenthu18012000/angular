@@ -1,0 +1,21 @@
+<div class="login-container">
+    <div class="login-form-container">
+        <div class="login-form-header">Login</div>
+        <form #actorForm="ngForm" (ngSubmit)="onLogin()" class="login-form-body">
+            <common-input
+                label="Email"
+                [model]="model"
+                name="email"
+                modelFieldName="email"
+            ></common-input>
+            <common-input
+                label="Password"
+                [model]="model"
+                name="password"
+                type="password"
+                modelFieldName="password"
+            ></common-input>
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+</div>

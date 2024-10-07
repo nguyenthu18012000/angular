@@ -23,7 +23,7 @@ export class RegisterComponent {
     delete newModel['id'];
     const result = await this.db.createNewUser(newModel);
     if (result === 'success') {
-      this.router.navigate(['/']);
+      this.router.navigate(['/login']);
     }
   }
 }
